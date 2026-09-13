@@ -133,7 +133,7 @@ ul { list-style: none; }
 .bento-card::before, .project-card::before, .mini-card::before, .cert-card::before {
   content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   opacity: 0; transition: opacity 0.4s ease;
-  background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgba(217,119,87,0.14), rgba(217,119,87,0.05) 45%, transparent 75%);
+  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(217,119,87,0.16), rgba(217,119,87,0.04) 55%, transparent 80%);
 }
 .bento-card:hover::before, .project-card:hover::before, .mini-card:hover::before, .cert-card:hover::before {
   opacity: 1;
@@ -238,7 +238,7 @@ ul { list-style: none; }
 /* ==========================================================================
    Sections (generic)
    ========================================================================== */
-.section { padding: 64px 32px; }
+.section { padding: 48px 32px; }
 
 .section-tag {
   display: inline-block;
@@ -259,7 +259,7 @@ ul { list-style: none; }
    ========================================================================== */
 .about-text {
   font-size: 1.15rem; color: var(--ink-soft); line-height: 1.75;
-  max-width: 820px; margin-bottom: 40px;
+  max-width: 820px;
 }
 .about-text strong { color: var(--ink); font-weight: 600; }
 
