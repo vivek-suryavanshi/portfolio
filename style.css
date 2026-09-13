@@ -127,20 +127,6 @@ ul { list-style: none; }
   z-index: -1;
 }
 
-/* ---- Cursor spotlight on cards ---- */
-.bento-card, .project-card, .mini-card, .cert-card {
-  position: relative;
-  overflow: hidden;
-}
-.bento-card::before, .project-card::before, .mini-card::before, .cert-card::before {
-  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  opacity: 0; transition: opacity 0.4s ease;
-  background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), rgba(217,119,87,0.16), rgba(217,119,87,0.04) 55%, transparent 80%);
-}
-.bento-card:hover::before, .project-card:hover::before, .mini-card:hover::before, .cert-card:hover::before {
-  opacity: 1;
-}
-
 .hero-grid {
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
 }

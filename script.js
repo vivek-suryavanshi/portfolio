@@ -40,12 +40,3 @@ navToggle.addEventListener('click', () => {
 navLinksList.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => navLinksList.classList.remove('open'));
 });
-
-// Cursor spotlight — subtle glow on cards, following the mouse per-card
-document.querySelectorAll('.bento-card, .project-card, .mini-card, .cert-card').forEach((card) => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    card.style.setProperty('--mx', `${e.clientX - rect.left}px`);
-    card.style.setProperty('--my', `${e.clientY - rect.top}px`);
-  });
-});
