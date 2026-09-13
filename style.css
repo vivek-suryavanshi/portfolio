@@ -204,6 +204,10 @@ ul { list-style: none; }
   background: linear-gradient(180deg, transparent 62%, var(--pop-soft) 62%);
   color: var(--pop);
 }
+.cta-pop {
+  background: linear-gradient(180deg, transparent 62%, #f6d4bc 62%);
+  color: #c2410c;
+}
 .highlight-lg {
   font-size: 1.15em; font-weight: 800;
   background: linear-gradient(180deg, transparent 74%, var(--pop-soft) 74%);
