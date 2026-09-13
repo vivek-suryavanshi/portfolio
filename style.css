@@ -227,9 +227,12 @@ ul { list-style: none; }
 .section { padding: 88px 32px; border-top: 1px solid var(--border); }
 
 .section-tag {
-  font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700;
-  color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.1em;
-  margin-bottom: 16px;
+  display: inline-block;
+  font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700;
+  color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.08em;
+  background: rgba(217,119,87,0.1); border: 1px solid rgba(217,119,87,0.25);
+  padding: 6px 14px; border-radius: 999px;
+  margin-bottom: 20px;
 }
 
 .section-title {
