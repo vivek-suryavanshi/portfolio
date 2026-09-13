@@ -299,7 +299,7 @@ ul { list-style: none; }
 .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .tag {
   font-size: 0.78rem; font-weight: 500; color: var(--ink-soft);
-  background: var(--bg-alt); border: 1px solid var(--border);
+  background: var(--bg-alt); border: 1.5px solid #d3cbbd;
   padding: 6px 12px; border-radius: 999px;
 }
 
