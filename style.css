@@ -330,7 +330,7 @@ ul { list-style: none; }
   font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6; padding-left: 18px; position: relative;
 }
 .timeline-list li::before {
-  content: '→'; position: absolute; left: 0; color: var(--accent-muted); font-weight: 600;
+  content: '→'; position: absolute; left: 0; color: var(--ink); font-weight: 600;
 }
 
 /* ==========================================================================
