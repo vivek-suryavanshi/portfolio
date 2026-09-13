@@ -324,7 +324,7 @@ ul { list-style: none; }
 .timeline-date {
   font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-faint);
 }
-.timeline-org { font-size: 0.92rem; color: var(--accent-2); font-weight: 600; margin-bottom: 14px; }
+.timeline-org { font-size: 0.92rem; color: var(--accent-muted); font-weight: 400; font-style: italic; margin-bottom: 14px; }
 .timeline-list { display: flex; flex-direction: column; gap: 10px; }
 .timeline-list li {
   font-size: 0.95rem; color: var(--ink-soft); line-height: 1.6; padding-left: 18px; position: relative;
