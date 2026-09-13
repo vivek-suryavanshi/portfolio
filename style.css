@@ -125,14 +125,6 @@ ul { list-style: none; }
   z-index: -1;
 }
 
-.hero-spotlight {
-  position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  opacity: 0; transition: opacity 0.4s ease;
-  background: radial-gradient(500px circle at var(--spot-x, 50%) var(--spot-y, 50%),
-    rgba(79,70,229,0.14), transparent 70%);
-}
-.hero:hover .hero-spotlight { opacity: 1; }
-
 /* ---- Cursor spotlight on cards ---- */
 .bento-card, .project-card, .mini-card, .cert-card {
   position: relative;
@@ -246,7 +238,7 @@ ul { list-style: none; }
 /* ==========================================================================
    Sections (generic)
    ========================================================================== */
-.section { padding: 88px 32px; border-top: 1px solid var(--border); }
+.section { padding: 88px 32px; }
 
 .section-tag {
   display: inline-block;
@@ -420,10 +412,31 @@ ul { list-style: none; }
    Scroll reveal
    ========================================================================== */
 .reveal {
-  opacity: 0; transform: translateY(18px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  opacity: 0; transform: translateY(22px) scale(0.98); filter: blur(4px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal.visible { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+
+/* Staggered cascade for grouped cards/items — each sibling reveals slightly
+   after the previous one, instead of all popping in at once. */
+.about-cards > .reveal:nth-child(1), .bento-grid > .reveal:nth-child(1),
+.timeline > .reveal:nth-child(1), .projects-grid > .reveal:nth-child(1),
+.cert-grid > .reveal:nth-child(1) { transition-delay: 0s; }
+.about-cards > .reveal:nth-child(2), .bento-grid > .reveal:nth-child(2),
+.timeline > .reveal:nth-child(2), .projects-grid > .reveal:nth-child(2),
+.cert-grid > .reveal:nth-child(2) { transition-delay: 0.08s; }
+.about-cards > .reveal:nth-child(3), .bento-grid > .reveal:nth-child(3),
+.timeline > .reveal:nth-child(3), .projects-grid > .reveal:nth-child(3),
+.cert-grid > .reveal:nth-child(3) { transition-delay: 0.16s; }
+.bento-grid > .reveal:nth-child(4), .timeline > .reveal:nth-child(4),
+.projects-grid > .reveal:nth-child(4), .cert-grid > .reveal:nth-child(4) { transition-delay: 0.24s; }
+.bento-grid > .reveal:nth-child(5), .cert-grid > .reveal:nth-child(5) { transition-delay: 0.3s; }
+.bento-grid > .reveal:nth-child(6), .cert-grid > .reveal:nth-child(6) { transition-delay: 0.36s; }
+.bento-grid > .reveal:nth-child(7), .cert-grid > .reveal:nth-child(7) { transition-delay: 0.42s; }
+.cert-grid > .reveal:nth-child(8) { transition-delay: 0.48s; }
+.cert-grid > .reveal:nth-child(9) { transition-delay: 0.54s; }
 
 /* ==========================================================================
    Responsive

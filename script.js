@@ -7,7 +7,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0, rootMargin: '0px 0px 1000px 0px' });
 
 revealEls.forEach((el) => revealObserver.observe(el));
 
@@ -40,16 +40,6 @@ navToggle.addEventListener('click', () => {
 navLinksList.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => navLinksList.classList.remove('open'));
 });
-
-// Cursor spotlight — hero background glow follows the mouse
-const hero = document.querySelector('.hero');
-if (hero) {
-  hero.addEventListener('mousemove', (e) => {
-    const rect = hero.getBoundingClientRect();
-    hero.style.setProperty('--spot-x', `${e.clientX - rect.left}px`);
-    hero.style.setProperty('--spot-y', `${e.clientY - rect.top}px`);
-  });
-}
 
 // Cursor spotlight — subtle glow on cards, following the mouse per-card
 document.querySelectorAll('.bento-card, .project-card, .mini-card, .cert-card').forEach((card) => {
