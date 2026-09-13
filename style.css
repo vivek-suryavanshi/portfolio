@@ -120,10 +120,9 @@ ul { list-style: none; }
 .hero-bg {
   position: absolute; inset: -15% -10% -10% -10%;
   background:
-    radial-gradient(ellipse 45% 40% at 12% 18%, rgba(255,95,31,0.13), transparent 60%),
-    radial-gradient(ellipse 50% 45% at 88% 12%, rgba(217,119,87,0.14), transparent 60%),
-    radial-gradient(ellipse 40% 40% at 78% 78%, rgba(29,138,94,0.10), transparent 60%),
-    radial-gradient(ellipse 45% 40% at 20% 85%, rgba(217,119,87,0.08), transparent 55%);
+    radial-gradient(ellipse 50% 45% at 10% 15%, rgba(255,95,31,0.15), transparent 62%),
+    radial-gradient(ellipse 55% 50% at 55% 35%, rgba(217,119,87,0.09), transparent 65%),
+    radial-gradient(ellipse 50% 45% at 85% 80%, rgba(29,138,94,0.12), transparent 62%);
   filter: blur(50px);
   z-index: -1;
 }
