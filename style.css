@@ -238,7 +238,7 @@ ul { list-style: none; }
 /* ==========================================================================
    Sections (generic)
    ========================================================================== */
-.section { padding: 88px 32px; }
+.section { padding: 64px 32px; }
 
 .section-tag {
   display: inline-block;
