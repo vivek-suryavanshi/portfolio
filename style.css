@@ -13,6 +13,9 @@
   --accent-ink: #ffffff;
   --accent-soft: #eeecfd;
   --accent-2: #d97757;
+  --accent-2-soft: #fbe6da;
+  --highlight: #ff5f1f;
+  --highlight-soft: #ffe6d3;
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -211,12 +214,12 @@ ul { list-style: none; }
   margin-bottom: 24px;
 }
 .highlight {
-  background: linear-gradient(180deg, transparent 62%, var(--accent-soft) 62%);
-  color: var(--accent);
+  background: linear-gradient(180deg, transparent 62%, var(--highlight-soft) 62%);
+  color: var(--highlight);
 }
 .highlight-lg {
   font-size: 1.15em; font-weight: 800;
-  background: linear-gradient(180deg, transparent 74%, var(--accent-soft) 74%);
+  background: linear-gradient(180deg, transparent 74%, var(--highlight-soft) 74%);
 }
 
 .hero-sub {
