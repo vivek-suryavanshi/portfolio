@@ -231,44 +231,6 @@ ul { list-style: none; }
 }
 .about-text strong { color: var(--ink); font-weight: 600; }
 
-/* ---- Career strip (proof of the "14+ years" claim) ---- */
-.career-strip {
-  display: flex; align-items: center; gap: 0;
-  padding: 22px 26px;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-}
-
-.career-point {
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-  flex: 0 0 auto; text-align: center; min-width: 88px;
-}
-.career-year {
-  font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-faint); white-space: nowrap;
-}
-.career-dot {
-  width: 10px; height: 10px; border-radius: 50%; background: var(--border); border: 2px solid var(--surface);
-  box-shadow: 0 0 0 1px var(--border);
-}
-.career-role {
-  font-size: 0.82rem; font-weight: 600; color: var(--ink-soft); white-space: nowrap;
-}
-
-.career-point-active .career-year { color: var(--accent); font-weight: 600; }
-.career-point-active .career-dot {
-  width: 12px; height: 12px; background: var(--accent);
-  animation: accent-pulse 1.8s ease-out infinite;
-}
-@keyframes accent-pulse {
-  0% { box-shadow: 0 0 0 0 rgba(79,70,229,0.5); }
-  70% { box-shadow: 0 0 0 7px rgba(79,70,229,0); }
-  100% { box-shadow: 0 0 0 0 rgba(79,70,229,0); }
-}
-.career-point-active .career-role { color: var(--ink); }
-
-.career-line { flex: 1 1 auto; height: 2px; background: var(--border); margin: 0 4px 24px; min-width: 20px; }
-.career-line-active { background: linear-gradient(90deg, var(--border), var(--accent)); }
-
 .about-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
 .mini-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
@@ -451,7 +413,4 @@ ul { list-style: none; }
   .hero { padding: 96px 24px 64px; }
   .section { padding: 64px 24px; }
   .container { padding: 0 24px; }
-  .career-strip { flex-direction: column; align-items: stretch; gap: 4px; }
-  .career-point { flex-direction: row; justify-content: space-between; min-width: 0; text-align: left; }
-  .career-line { flex: 0 0 auto; width: 2px; height: 20px; margin: 0 0 0 4px; }
 }
