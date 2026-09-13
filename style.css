@@ -17,6 +17,8 @@
   --accent-muted: #b3521f;
   --highlight: #ff5f1f;
   --highlight-soft: #ffe6d3;
+  --pop: #4640d6;
+  --pop-soft: #e3e0fb;
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -199,12 +201,12 @@ ul { list-style: none; }
   margin-bottom: 24px;
 }
 .highlight {
-  background: linear-gradient(180deg, transparent 62%, #e3e0fb 62%);
-  color: #4640d6;
+  background: linear-gradient(180deg, transparent 62%, var(--pop-soft) 62%);
+  color: var(--pop);
 }
 .highlight-lg {
   font-size: 1.15em; font-weight: 800;
-  background: linear-gradient(180deg, transparent 74%, #e3e0fb 74%);
+  background: linear-gradient(180deg, transparent 74%, var(--pop-soft) 74%);
 }
 
 .hero-sub {
@@ -340,7 +342,7 @@ ul { list-style: none; }
   border-bottom: 1px solid transparent;
 }
 .project-link:hover { border-color: var(--accent); }
-.project-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; }
+.project-card h3 { font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; color: var(--pop); }
 .project-sub { font-size: 0.88rem; color: var(--ink-soft); font-weight: 600; margin-bottom: 14px; }
 .project-card > p:not(.project-sub) { font-size: 0.94rem; color: var(--ink-soft); line-height: 1.65; margin-bottom: 18px; }
 .project-note { margin-top: 24px; font-size: 0.85rem; color: var(--ink-faint); font-style: italic; }
