@@ -125,6 +125,28 @@ ul { list-style: none; }
   z-index: -1;
 }
 
+.hero-spotlight {
+  position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  opacity: 0; transition: opacity 0.4s ease;
+  background: radial-gradient(500px circle at var(--spot-x, 50%) var(--spot-y, 50%),
+    rgba(79,70,229,0.14), transparent 70%);
+}
+.hero:hover .hero-spotlight { opacity: 1; }
+
+/* ---- Cursor spotlight on cards ---- */
+.bento-card, .project-card, .mini-card, .cert-card {
+  position: relative;
+  overflow: hidden;
+}
+.bento-card::before, .project-card::before, .mini-card::before, .cert-card::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  opacity: 0; transition: opacity 0.4s ease;
+  background: radial-gradient(380px circle at var(--mx, 50%) var(--my, 50%), rgba(217,119,87,0.14), rgba(217,119,87,0.05) 45%, transparent 75%);
+}
+.bento-card:hover::before, .project-card:hover::before, .mini-card:hover::before, .cert-card:hover::before {
+  opacity: 1;
+}
+
 .hero-grid {
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
 }
