@@ -22,7 +22,6 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#approach" class="nav-link">Approach</a></li>
       <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#skills" class="nav-link">Skills</a></li>
       <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -94,83 +93,33 @@ architect.<span class="code-fn">receive</span>(
     </div>
   </section>
 
-  <!-- APPROACH / HOW IT WORKS -->
-  <section id="approach" class="section container">
-    <p class="section-tag reveal">How It Works</p>
-    <h2 class="section-title reveal">From a business question to a verified action.</h2>
-    <p class="approach-intro reveal">
-      Every agentic system I build follows the same backbone — a request comes in,
-      the agent reasons and takes action in the middle, and a verified, production-ready
-      result goes out.
-    </p>
-
-    <div class="pipeline">
-      <div class="pipeline-step reveal">
-        <div class="pipeline-icon">🗣️</div>
-        <h3>Input</h3>
-        <p>A user question or business goal enters the system.</p>
-      </div>
-      <div class="pipeline-arrow" aria-hidden="true">→</div>
-      <div class="pipeline-step reveal">
-        <div class="pipeline-icon">🧠</div>
-        <h3>Reason</h3>
-        <p>A planner–reasoner breaks it into steps (ReAct, Chain-of-Thought).</p>
-      </div>
-      <div class="pipeline-arrow" aria-hidden="true">→</div>
-      <div class="pipeline-step reveal">
-        <div class="pipeline-icon">🔧</div>
-        <h3>Act</h3>
-        <p>The agent orchestrates tools, APIs, and retrieval (RAG) to get what it needs.</p>
-      </div>
-      <div class="pipeline-arrow" aria-hidden="true">→</div>
-      <div class="pipeline-step reveal">
-        <div class="pipeline-icon">🛡️</div>
-        <h3>Verify</h3>
-        <p>LLM-as-judge evals check faithfulness, accuracy, and tool-selection quality.</p>
-      </div>
-      <div class="pipeline-arrow" aria-hidden="true">→</div>
-      <div class="pipeline-step reveal">
-        <div class="pipeline-icon">✅</div>
-        <h3>Deliver</h3>
-        <p>A grounded answer or action ships — traced, measured, production-ready.</p>
-      </div>
-    </div>
-
-    <p class="approach-note reveal">
-      This is the same backbone behind WhisperRAG, Cognify, and the enterprise RAG
-      platforms I've shipped at Accenture — the details change, the pattern doesn't.
-    </p>
-  </section>
-
   <!-- ABOUT -->
   <section id="about" class="section container">
     <p class="section-tag reveal">About</p>
     <h2 class="section-title reveal">From automation testing to autonomous agents.</h2>
-    <div class="about-grid">
-      <p class="about-text reveal">
-        I'm a senior GenAI engineer and solutions builder who takes AI systems from proof-of-concept
-        to production. My work spans designing agentic workflows with <strong>LangGraph</strong> and
-        agent SDKs, integrating enterprise tools and data, and building rigorous evaluation pipelines
-        across every layer of an agent — so quality isn't a guess, it's measured. I'm Anthropic
-        Claude-certified across both the Architect and Developer tracks, and I spend as much time in
-        the weeds of trajectory-level evals as I do in stakeholder rooms shaping AI roadmaps.
-      </p>
-      <div class="about-cards">
-        <div class="mini-card reveal">
-          <span class="mini-card-icon">🧭</span>
-          <h3>Architect mindset</h3>
-          <p>Enterprise RAG platforms on Azure serving 500+ employees — designed for scale, not demos.</p>
-        </div>
-        <div class="mini-card reveal">
-          <span class="mini-card-icon">🔬</span>
-          <h3>Eval-obsessed</h3>
-          <p>Multi-level eval design — end-to-end, trajectory, and component — with golden datasets and LLM-as-judge scoring.</p>
-        </div>
-        <div class="mini-card reveal">
-          <span class="mini-card-icon">🛠️</span>
-          <h3>Builder, not just theorist</h3>
-          <p>Four live agentic apps shipped solo — voice RAG, multi-agent planners, and natural-language data tools.</p>
-        </div>
+    <p class="about-text reveal">
+      I'm a senior GenAI engineer and solutions builder who takes AI systems from proof-of-concept
+      to production. My work spans designing agentic workflows with <strong>LangGraph</strong> and
+      agent SDKs, integrating enterprise tools and data, and building rigorous evaluation pipelines
+      across every layer of an agent — so quality isn't a guess, it's measured. I'm Anthropic
+      Claude-certified across both the Architect and Developer tracks, and I spend as much time in
+      the weeds of trajectory-level evals as I do in stakeholder rooms shaping AI roadmaps.
+    </p>
+    <div class="about-cards">
+      <div class="mini-card reveal">
+        <span class="mini-card-icon">🧭</span>
+        <h3>Architect mindset</h3>
+        <p>Enterprise RAG platforms on Azure serving 500+ employees — designed for scale, not demos.</p>
+      </div>
+      <div class="mini-card reveal">
+        <span class="mini-card-icon">🔬</span>
+        <h3>Eval-obsessed</h3>
+        <p>Multi-level eval design — end-to-end, trajectory, and component — with golden datasets and LLM-as-judge scoring.</p>
+      </div>
+      <div class="mini-card reveal">
+        <span class="mini-card-icon">🛠️</span>
+        <h3>Builder, not just theorist</h3>
+        <p>Four live agentic apps shipped solo — voice RAG, multi-agent planners, and natural-language data tools.</p>
       </div>
     </div>
   </section>
@@ -230,12 +179,12 @@ architect.<span class="code-fn">receive</span>(
         </div>
       </div>
 
-      <div class="bento-card bento-wide reveal">
+      <div class="bento-card reveal">
         <h3><span class="card-icon">☁️</span>Cloud &amp; Backend</h3>
         <div class="tags">
-          <span class="tag">Azure (OpenAI, AI Search, Cosmos DB, Blob)</span><span class="tag">GCP (Vertex AI)</span>
-          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">Streamlit</span>
-          <span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">Jenkins CI/CD</span>
+          <span class="tag">Azure OpenAI</span><span class="tag">Azure AI Search</span><span class="tag">Cosmos DB</span>
+          <span class="tag">GCP / Vertex AI</span><span class="tag">Python</span><span class="tag">FastAPI</span>
+          <span class="tag">Pydantic</span><span class="tag">Streamlit</span><span class="tag">Docker</span><span class="tag">Jenkins CI/CD</span>
         </div>
       </div>
 
@@ -400,15 +349,15 @@ architect.<span class="code-fn">receive</span>(
     <p class="section-tag reveal">Certifications</p>
     <h2 class="section-title reveal">Certified, and battle-tested in production.</h2>
     <div class="cert-grid">
-      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Architect — Professional</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Architect — Foundations</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Associate — Foundations</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Developer — Foundations</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🔷</span><p>Microsoft Azure AI Engineer Associate (AI-102)</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🟡</span><p>Google Generative AI Leader</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🟠</span><p>AWS Certified Cloud Practitioner</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">🔶</span><p>Databricks Certified Generative AI Engineer — Associate</p></div>
-      <div class="cert-card reveal"><span class="cert-badge">📘</span><p>BCS ISEB Certified Business Analyst</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-architect-professional.png" alt="Anthropic Claude Certified Architect — Professional badge"><p>Anthropic Claude Certified Architect — Professional</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-architect-foundations.png" alt="Anthropic Claude Certified Architect — Foundations badge"><p>Anthropic Claude Certified Architect — Foundations</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-associate-foundations.png" alt="Anthropic Claude Certified Associate — Foundations badge"><p>Anthropic Claude Certified Associate — Foundations</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-developer-foundations.png" alt="Anthropic Claude Certified Developer — Foundations badge"><p>Anthropic Claude Certified Developer — Foundations</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/azure-ai-engineer.png" alt="Microsoft Azure AI Engineer Associate badge"><p>Microsoft Azure AI Engineer Associate (AI-102)</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/google-genai-leader.png" alt="Google Generative AI Leader badge"><p>Google Generative AI Leader</p></div>
+      <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/aws-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner badge"><p>AWS Certified Cloud Practitioner</p></div>
+      <div class="cert-card reveal"><span class="cert-badge cert-badge-emoji">🔶</span><p>Databricks Certified Generative AI Engineer — Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-badge cert-badge-emoji">📘</span><p>BCS ISEB Certified Business Analyst</p></div>
     </div>
   </section>
 

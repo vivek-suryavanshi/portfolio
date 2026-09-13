@@ -223,53 +223,15 @@ ul { list-style: none; }
 }
 
 /* ==========================================================================
-   Approach / How it works pipeline
-   ========================================================================== */
-.approach-intro {
-  font-size: 1.05rem; color: var(--ink-soft); max-width: 680px; margin-top: -24px; margin-bottom: 48px;
-}
-
-.pipeline {
-  display: flex; align-items: stretch; gap: 8px; margin-bottom: 32px;
-}
-
-.pipeline-step {
-  flex: 1; min-width: 0;
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
-  padding: 26px 18px; text-align: center;
-  display: flex; flex-direction: column; align-items: center; gap: 6px;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-.pipeline-step:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: #d9d5cb; }
-
-.pipeline-icon {
-  width: 52px; height: 52px; border-radius: 50%;
-  background: var(--accent-soft); display: flex; align-items: center; justify-content: center;
-  font-size: 1.4rem; margin-bottom: 6px;
-}
-
-.pipeline-step h3 { font-size: 0.98rem; font-weight: 700; }
-.pipeline-step p { font-size: 0.82rem; color: var(--ink-soft); line-height: 1.5; }
-
-.pipeline-arrow {
-  display: flex; align-items: center; justify-content: center;
-  flex: 0 0 auto; width: 24px;
-  color: var(--accent); font-size: 1.2rem; font-weight: 600;
-}
-
-.approach-note {
-  font-size: 0.88rem; color: var(--ink-faint); font-style: italic; max-width: 680px;
-}
-
-/* ==========================================================================
    About
    ========================================================================== */
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
-.about-text { font-size: 1.06rem; color: var(--ink-soft); line-height: 1.75; }
+.about-text {
+  font-size: 1.15rem; color: var(--ink-soft); line-height: 1.75;
+  max-width: 820px; margin-bottom: 40px;
+}
 .about-text strong { color: var(--ink); font-weight: 600; }
 
-.about-cards { display: flex; flex-direction: column; gap: 16px; }
+.about-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .mini-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
   padding: 22px 24px; box-shadow: var(--shadow-sm);
@@ -375,7 +337,10 @@ ul { list-style: none; }
 }
 .cert-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .cert-badge {
-  font-size: 1.3rem; width: 40px; height: 40px; min-width: 40px; display: flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; min-width: 44px; object-fit: contain;
+}
+.cert-badge-emoji {
+  font-size: 1.3rem; display: flex; align-items: center; justify-content: center;
   background: var(--bg-alt); border-radius: 50%;
 }
 .cert-card p { font-size: 0.9rem; font-weight: 500; line-height: 1.35; }
@@ -424,14 +389,12 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
   .hero-code { order: 2; }
-  .about-grid { grid-template-columns: 1fr; }
+  .about-cards { grid-template-columns: 1fr; }
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .bento-wide { grid-column: span 2; }
   .projects-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
-  .pipeline { flex-direction: column; }
-  .pipeline-arrow { transform: rotate(90deg); width: auto; height: 24px; }
 }
 
 @media (max-width: 720px) {
