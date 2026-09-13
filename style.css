@@ -199,16 +199,12 @@ ul { list-style: none; }
   margin-bottom: 24px;
 }
 .highlight {
-  background: linear-gradient(180deg, transparent 62%, var(--highlight-soft) 62%);
-  color: var(--highlight);
-}
-.hero-pop {
   background: linear-gradient(180deg, transparent 62%, #e3e0fb 62%);
   color: #4640d6;
 }
 .highlight-lg {
   font-size: 1.15em; font-weight: 800;
-  background: linear-gradient(180deg, transparent 74%, var(--highlight-soft) 74%);
+  background: linear-gradient(180deg, transparent 74%, #e3e0fb 74%);
 }
 
 .hero-sub {
