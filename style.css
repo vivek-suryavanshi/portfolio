@@ -246,7 +246,7 @@ ul { list-style: none; }
    Bento skills grid
    ========================================================================== */
 .bento-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start;
 }
 .bento-wide { grid-column: span 2; }
 
@@ -393,7 +393,6 @@ ul { list-style: none; }
   .hero-code { order: 2; }
   .about-cards { grid-template-columns: 1fr; }
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
-  .bento-wide { grid-column: span 2; }
   .projects-grid { grid-template-columns: 1fr; }
   .cert-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { grid-template-columns: repeat(2, 1fr); }
