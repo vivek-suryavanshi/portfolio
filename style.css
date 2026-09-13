@@ -460,5 +460,5 @@ ul { list-style: none; }
   .cert-grid { grid-template-columns: 1fr; }
   .hero { padding: 96px 24px 64px; }
   .section { padding: 64px 24px; }
-  .container { padding: 0 24px; }
+  .container { padding-left: 24px; padding-right: 24px; }
 }
