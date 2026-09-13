@@ -173,6 +173,11 @@ ul { list-style: none; }
 .status-text { font-family: var(--font-mono); font-size: 0.76rem; font-weight: 600; color: #1d8a5e; }
 .status-metric { font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-faint); margin-left: auto; }
 
+.hero-name {
+  font-size: 1.15rem; font-weight: 700; color: var(--ink);
+  letter-spacing: -0.01em; margin-bottom: 10px;
+}
+
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 0.85rem; font-weight: 500; color: var(--accent);
