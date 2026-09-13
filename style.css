@@ -201,7 +201,7 @@ ul { list-style: none; }
   color: var(--accent);
 }
 .highlight-lg {
-  font-size: 1.3em; font-weight: 800;
+  font-size: 1.15em; font-weight: 800;
   background: linear-gradient(180deg, transparent 74%, var(--accent-soft) 74%);
 }
 
