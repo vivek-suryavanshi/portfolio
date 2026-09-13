@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vivek Suryavanshi — Senior GenAI Engineer & Solutions Architect</title>
+<meta name="description" content="Senior GenAI Engineer & Solutions Architect. 14+ years in enterprise software, 4+ years building agentic AI, RAG, and LLM systems in production. 4x Anthropic Claude Certified.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="#top" class="logo">VS<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#approach" class="nav-link">Approach</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <a href="assets/Vivek_Suryavanshi_Resume.pdf" class="btn btn-nav" download>Resume ↓</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="eyebrow reveal">Senior GenAI Engineer · Solutions Architect</p>
+        <h1 class="hero-title reveal">
+          I build AI that <span class="highlight">acts</span>.
+        </h1>
+        <p class="hero-sub reveal">
+          14+ years in enterprise software. 4+ years taking agentic AI from POC to
+          production — LangGraph, RAG pipelines, and rigorous LLM evals. 4× Anthropic
+          Claude Certified.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="stat-num">14+</span><span class="stat-label">Years in software</span></div>
+          <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Years in agentic AI &amp; RAG</span></div>
+          <div class="stat"><span class="stat-num">4×</span><span class="stat-label">Claude Certified</span></div>
+          <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Users served in production</span></div>
+        </div>
+      </div>
+
+      <div class="hero-code reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-titlebar">
+            <span class="code-dot dot-red"></span>
+            <span class="code-dot dot-yellow"></span>
+            <span class="code-dot dot-green"></span>
+            <span class="code-filename">meet_the_agent.pseudo</span>
+          </div>
+          <pre class="code-body"><code><span class="code-comment"># Meet Architect — an autonomous agent</span>
+architect = <span class="code-fn">Agent</span>(role=<span class="code-str">"GenAI Architect"</span>)
+
+architect.<span class="code-fn">receive</span>(
+  <span class="code-str">"Help 500 employees find answers, fast"</span>
+)
+
+<span class="code-kw">while</span> not confident:
+    architect.<span class="code-fn">think</span>()    <span class="code-comment"># plan the steps</span>
+    architect.<span class="code-fn">act</span>()       <span class="code-comment"># call tools, fetch data</span>
+    architect.<span class="code-fn">verify</span>()    <span class="code-comment"># trust, but check</span>
+
+<span class="code-comment">&gt;&gt;&gt; Status: shipped to production ✅</span>
+<span class="code-comment">&gt;&gt;&gt; Faithfulness: 97%  ·  Confidence: 94%</span></code></pre>
+          <div class="code-footer">
+            <span class="status-dot"></span>
+            <span class="status-text">Agent Active</span>
+            <span class="status-metric">thinking → acting → verifying</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH / HOW IT WORKS -->
+  <section id="approach" class="section container">
+    <p class="section-tag reveal">How It Works</p>
+    <h2 class="section-title reveal">From a business question to a verified action.</h2>
+    <p class="approach-intro reveal">
+      Every agentic system I build follows the same backbone — a request comes in,
+      the agent reasons and takes action in the middle, and a verified, production-ready
+      result goes out.
+    </p>
+
+    <div class="pipeline">
+      <div class="pipeline-step reveal">
+        <div class="pipeline-icon">🗣️</div>
+        <h3>Input</h3>
+        <p>A user question or business goal enters the system.</p>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">→</div>
+      <div class="pipeline-step reveal">
+        <div class="pipeline-icon">🧠</div>
+        <h3>Reason</h3>
+        <p>A planner–reasoner breaks it into steps (ReAct, Chain-of-Thought).</p>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">→</div>
+      <div class="pipeline-step reveal">
+        <div class="pipeline-icon">🔧</div>
+        <h3>Act</h3>
+        <p>The agent orchestrates tools, APIs, and retrieval (RAG) to get what it needs.</p>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">→</div>
+      <div class="pipeline-step reveal">
+        <div class="pipeline-icon">🛡️</div>
+        <h3>Verify</h3>
+        <p>LLM-as-judge evals check faithfulness, accuracy, and tool-selection quality.</p>
+      </div>
+      <div class="pipeline-arrow" aria-hidden="true">→</div>
+      <div class="pipeline-step reveal">
+        <div class="pipeline-icon">✅</div>
+        <h3>Deliver</h3>
+        <p>A grounded answer or action ships — traced, measured, production-ready.</p>
+      </div>
+    </div>
+
+    <p class="approach-note reveal">
+      This is the same backbone behind WhisperRAG, Cognify, and the enterprise RAG
+      platforms I've shipped at Accenture — the details change, the pattern doesn't.
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <p class="section-tag reveal">About</p>
+    <h2 class="section-title reveal">From automation testing to autonomous agents.</h2>
+    <div class="about-grid">
+      <p class="about-text reveal">
+        I'm a senior GenAI engineer and solutions builder who takes AI systems from proof-of-concept
+        to production. My work spans designing agentic workflows with <strong>LangGraph</strong> and
+        agent SDKs, integrating enterprise tools and data, and building rigorous evaluation pipelines
+        across every layer of an agent — so quality isn't a guess, it's measured. I'm Anthropic
+        Claude-certified across both the Architect and Developer tracks, and I spend as much time in
+        the weeds of trajectory-level evals as I do in stakeholder rooms shaping AI roadmaps.
+      </p>
+      <div class="about-cards">
+        <div class="mini-card reveal">
+          <span class="mini-card-icon">🧭</span>
+          <h3>Architect mindset</h3>
+          <p>Enterprise RAG platforms on Azure serving 500+ employees — designed for scale, not demos.</p>
+        </div>
+        <div class="mini-card reveal">
+          <span class="mini-card-icon">🔬</span>
+          <h3>Eval-obsessed</h3>
+          <p>Multi-level eval design — end-to-end, trajectory, and component — with golden datasets and LLM-as-judge scoring.</p>
+        </div>
+        <div class="mini-card reveal">
+          <span class="mini-card-icon">🛠️</span>
+          <h3>Builder, not just theorist</h3>
+          <p>Four live agentic apps shipped solo — voice RAG, multi-agent planners, and natural-language data tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <p class="section-tag reveal">Skills</p>
+    <h2 class="section-title reveal">The agentic AI stack, end to end.</h2>
+    <div class="bento-grid">
+
+      <div class="bento-card bento-wide reveal">
+        <h3><span class="card-icon">🤖</span>Agentic AI &amp; Orchestration</h3>
+        <div class="tags">
+          <span class="tag">LangGraph</span><span class="tag">OpenAI Agents SDK</span><span class="tag">LangChain</span>
+          <span class="tag">CrewAI</span><span class="tag">Planner–Reasoner / ReAct</span><span class="tag">Memory &amp; State Mgmt</span>
+          <span class="tag">Tool Orchestration</span><span class="tag">Agentic RAG</span><span class="tag">Guardrails</span>
+          <span class="tag">Prompt Engineering (CoT, few-shot)</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">⚙️</span>Agentic Dev &amp; Tooling</h3>
+        <div class="tags">
+          <span class="tag">Claude Code</span><span class="tag">MCP Servers</span><span class="tag">Agent Harness Design</span>
+          <span class="tag">Spec-Driven Dev</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">📊</span>Agentic &amp; LLM Evaluation</h3>
+        <div class="tags">
+          <span class="tag">Multi-Level Eval Design</span><span class="tag">Golden Datasets</span><span class="tag">LLM-as-Judge</span>
+          <span class="tag">Ragas</span><span class="tag">Tool-Selection Benchmarking</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">🧠</span>LLM Platforms &amp; Models</h3>
+        <div class="tags">
+          <span class="tag">OpenAI (GPT-4o, Whisper, TTS)</span><span class="tag">Azure OpenAI</span><span class="tag">Anthropic Claude</span>
+          <span class="tag">Google Gemini / Vertex AI</span><span class="tag">Hugging Face</span><span class="tag">Cohere</span><span class="tag">Ollama / MLX</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">🔍</span>RAG &amp; Retrieval</h3>
+        <div class="tags">
+          <span class="tag">Hybrid Retrieval</span><span class="tag">Chunking &amp; Embeddings</span><span class="tag">Azure AI Search</span>
+          <span class="tag">FAISS</span><span class="tag">Pinecone</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">📈</span>LLMOps &amp; Observability</h3>
+        <div class="tags">
+          <span class="tag">Langfuse</span><span class="tag">Tracing</span><span class="tag">Cost &amp; Latency Monitoring</span>
+        </div>
+      </div>
+
+      <div class="bento-card bento-wide reveal">
+        <h3><span class="card-icon">☁️</span>Cloud &amp; Backend</h3>
+        <div class="tags">
+          <span class="tag">Azure (OpenAI, AI Search, Cosmos DB, Blob)</span><span class="tag">GCP (Vertex AI)</span>
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">Streamlit</span>
+          <span class="tag">Supabase</span><span class="tag">Docker</span><span class="tag">Jenkins CI/CD</span>
+        </div>
+      </div>
+
+      <div class="bento-card reveal">
+        <h3><span class="card-icon">🎯</span>Delivery &amp; Leadership</h3>
+        <div class="tags">
+          <span class="tag">AI Roadmap Planning</span><span class="tag">Technical Discovery</span><span class="tag">Stakeholder Alignment</span>
+          <span class="tag">Workshop Facilitation</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <p class="section-tag reveal">Experience</p>
+    <h2 class="section-title reveal">Fourteen years, one steady climb toward autonomy.</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Senior GenAI/LLM Engineer &amp; Solutions Architect</h3>
+            <span class="timeline-date">Mar 2022 – Present</span>
+          </div>
+          <p class="timeline-org">Accenture Solutions Pvt Ltd, Gurugram</p>
+          <ul class="timeline-list">
+            <li>Architected end-to-end enterprise RAG platforms on Azure (Azure OpenAI, AI Search, Cosmos DB, Blob Storage) — serving 500+ employees across the US with policy-grounded answers.</li>
+            <li>Designed agentic workflows with LangGraph &amp; LangChain, applying planner–reasoner and ReAct patterns to orchestrate retrieval, tool execution, and state management.</li>
+            <li>Built RAG evaluation &amp; observability pipelines — LLM-as-judge scoring for faithfulness and retrieval accuracy, with Langfuse tracing for iterative production quality.</li>
+            <li>Defined agent evaluation metrics (tool-selection precision, parameter accuracy, trajectory coverage) using golden datasets.</li>
+            <li>Optimized chunking, embeddings, and hybrid retrieval (BM25 + vector) — cutting token consumption ~25% while improving retrieval accuracy.</li>
+            <li>Built FastAPI inference APIs with structured Pydantic outputs and auth for production-grade GenAI services.</li>
+            <li>Configured MCP servers (PostgreSQL, Playwright) in VS Code — enabling QA to run agentic test workflows via GitHub Copilot agent mode.</li>
+            <li>Led 10+ technical discovery sessions, translating business problems into GenAI solution blueprints; co-owned the roadmap across 3+ internal AI assistant initiatives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Business Analyst — Digital &amp; AI Solutions</h3>
+            <span class="timeline-date">Mar 2021 – Mar 2022</span>
+          </div>
+          <p class="timeline-org">Accenture Solutions Pvt Ltd, Gurugram</p>
+          <ul class="timeline-list">
+            <li>Translated business requirements into functional specs, KPIs, and success metrics for AI-enabled workflows; ran stakeholder workshops and UAT cycles driving measurable adoption.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>NLP Engineer (Python)</h3>
+            <span class="timeline-date">Mar 2019 – Feb 2021</span>
+          </div>
+          <p class="timeline-org">Accenture Solutions Pvt Ltd, Gurugram</p>
+          <ul class="timeline-list">
+            <li>Built Python NLP preprocessing pipelines (spaCy, NLTK) for cleaning, NER, tokenization, and lemmatization — the foundation for later LLM work.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Senior Automation QA Engineer</h3>
+            <span class="timeline-date">Apr 2011 – Feb 2019</span>
+          </div>
+          <p class="timeline-org">Accenture Solutions Pvt Ltd, Gurugram</p>
+          <ul class="timeline-list">
+            <li>Led test automation (Selenium, TestNG, Java, SQL) with 75%+ coverage; integrated Jenkins CI/CD, reducing regression effort by ~40%.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <p class="section-tag reveal">Projects</p>
+    <h2 class="section-title reveal">Shipped, not just prototyped.</h2>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-emoji">🎙️</span>
+          <div class="project-links">
+            <a href="https://whisperrag.onrender.com/" class="project-link" target="_blank" rel="noopener">Live App</a>
+            <a href="https://github.com/vivek-suryavanshi/whisperrag" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>WhisperRAG</h3>
+        <p class="project-sub">Voice-Powered RAG with Production Observability</p>
+        <p>Voice RAG grounded strictly in a loaded webpage. FastAPI + OpenAI Whisper / GPT-4o-mini / TTS, Supabase session logging. Langfuse tracks cost, latency, and traces; LLM-as-judge runs faithfulness scoring on every conversation.</p>
+        <div class="tags">
+          <span class="tag">FastAPI</span><span class="tag">Whisper</span><span class="tag">Langfuse</span><span class="tag">LLM-as-Judge</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-emoji">🧩</span>
+          <div class="project-links">
+            <a href="https://cognify-app.streamlit.app/" class="project-link" target="_blank" rel="noopener">Live App</a>
+            <a href="https://github.com/vivek-suryavanshi/cognify" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>Cognify</h3>
+        <p class="project-sub">Stateful Multi-Agent Executive Function Assistant</p>
+        <p>Stateful multi-agent system converting high-level goals into structured task plans via contextual reasoning and tool orchestration.</p>
+        <div class="tags">
+          <span class="tag">Multi-Agent</span><span class="tag">Planning</span><span class="tag">State Management</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-emoji">🌱</span>
+          <div class="project-links">
+            <a href="https://greenme.streamlit.app/" class="project-link" target="_blank" rel="noopener">Live App</a>
+            <a href="https://github.com/vivek-suryavanshi/GreenMeGenAIApp" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>GreenMe</h3>
+        <p class="project-sub">Sustainability GenAI Application</p>
+        <p>GenAI app tracking carbon footprint with personalized sustainability insights, built with LangChain and Cohere.</p>
+        <div class="tags">
+          <span class="tag">LangChain</span><span class="tag">Cohere</span>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-top">
+          <span class="project-emoji">📊</span>
+          <div class="project-links">
+            <a href="https://excel-sensei.streamlit.app/" class="project-link" target="_blank" rel="noopener">Live App</a>
+            <a href="https://github.com/vivek-suryavanshi/Excel-Sensei" class="project-link" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <h3>ExcelSensei</h3>
+        <p class="project-sub">Natural Language Interface for Excel</p>
+        <p>LangChain DataFrame agent enabling natural-language querying and analysis of Excel data — no formulas required.</p>
+        <div class="tags">
+          <span class="tag">LangChain</span><span class="tag">DataFrame Agent</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section container">
+    <p class="section-tag reveal">Certifications</p>
+    <h2 class="section-title reveal">Certified, and battle-tested in production.</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Architect — Professional</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Architect — Foundations</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Associate — Foundations</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🅰️</span><p>Anthropic Claude Certified Developer — Foundations</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🔷</span><p>Microsoft Azure AI Engineer Associate (AI-102)</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🟡</span><p>Google Generative AI Leader</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🟠</span><p>AWS Certified Cloud Practitioner</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">🔶</span><p>Databricks Certified Generative AI Engineer — Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-badge">📘</span><p>BCS ISEB Certified Business Analyst</p></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section">
+    <p class="section-tag reveal">Contact</p>
+    <h2 class="section-title reveal">Let's build something autonomous.</h2>
+    <p class="contact-sub reveal">Open to Senior GenAI Engineer, Agentic AI Architect, and Solutions Architect roles.</p>
+    <div class="contact-grid reveal">
+      <a href="mailto:vivek.suryavanshi@gmail.com" class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <span>vivek.suryavanshi@gmail.com</span>
+      </a>
+      <a href="tel:+919560613574" class="contact-item">
+        <span class="contact-icon">📞</span>
+        <span>+91-9560613574</span>
+      </a>
+      <a href="https://www.linkedin.com/in/vivek-suryavanshi/" class="contact-item" target="_blank" rel="noopener">
+        <span class="contact-icon">💼</span>
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/vivek-suryavanshi" class="contact-item" target="_blank" rel="noopener">
+        <span class="contact-icon">🐙</span>
+        <span>GitHub</span>
+      </a>
+    </div>
+    <p class="contact-loc reveal">📍 New Delhi, India</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Vivek Suryavanshi. Built with plain HTML, CSS &amp; JS — no frameworks, no dependencies.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
