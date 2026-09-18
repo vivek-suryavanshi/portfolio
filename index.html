@@ -77,24 +77,19 @@ try {
             <span class="code-dot dot-green"></span>
             <span class="code-filename">meet_the_agent.pseudo</span>
           </div>
-          <pre class="code-body"><code><span class="code-comment"># Meet Architect — an autonomous agent</span>
-architect = <span class="code-fn">Agent</span>(role=<span class="code-str">"GenAI Architect"</span>)
+          <pre class="code-body"><code>architect_agent = Agent(role="GenAI Architect")
 
-architect.<span class="code-fn">receive</span>(
-  <span class="code-str">"Help 500 employees find answers, fast"</span>
-)
+<span class="code-kw">while</span> architect_agent.is_running:
+    <span class="code-fn-think">think()</span>    <span class="code-comment-think"># plan the steps</span>
+    <span class="code-fn-act">act()</span>      <span class="code-comment-act"># call tools, fetch data</span>
+    <span class="code-fn-verify">verify()</span>   <span class="code-comment-verify"># trust, but check</span>
 
-<span class="code-kw">while</span> not confident:
-    architect.<span class="code-fn">think</span>()    <span class="code-comment"># plan the steps</span>
-    architect.<span class="code-fn">act</span>()       <span class="code-comment"># call tools, fetch data</span>
-    architect.<span class="code-fn">verify</span>()    <span class="code-comment"># trust, but check</span>
-
-<span class="code-comment">&gt;&gt;&gt; Status: shipped to production ✅</span>
-<span class="code-comment">&gt;&gt;&gt; Faithfulness: 97%  ·  Confidence: 94%</span></code></pre>
+<span class="code-comment">&gt;&gt;&gt; shipped to production <span class="code-check">✓</span></span>
+<span class="code-comment">&gt;&gt;&gt; faithfulness: 97% · confidence: 94%</span></code></pre>
           <div class="code-footer">
             <span class="status-dot"></span>
             <span class="status-text">Agent Active</span>
-            <span class="status-metric">thinking → acting → verifying</span>
+            <span class="status-metric"><span class="c-think">thinking</span> → <span class="c-act">acting</span> → <span class="c-verify">verifying</span></span>
           </div>
         </div>
       </div>
@@ -107,29 +102,28 @@ architect.<span class="code-fn">receive</span>(
     <h2 class="section-title reveal">My runtime <span class="highlight highlight-lg">Philosophy</span>.</h2>
     <div class="about-cards">
       <div class="mini-card reveal">
-        <span class="mini-card-icon">🧭</span>
-        <h3>Architect mindset</h3>
+        <span class="mini-card-tag">&gt; architect_mindset</span>
         <p>Enterprise RAG platforms on Azure serving 500+ employees — designed for scale, not demos.</p>
       </div>
       <div class="mini-card reveal">
-        <span class="mini-card-icon">🔬</span>
-        <h3>Eval-obsessed</h3>
+        <span class="mini-card-tag">&gt; eval_obsessed</span>
         <p>Multi-level eval design — end-to-end, trajectory, and component — with golden datasets and LLM-as-judge scoring.</p>
       </div>
       <div class="mini-card reveal">
-        <span class="mini-card-icon">🛠️</span>
-        <h3>Builder, not just theorist</h3>
+        <span class="mini-card-tag">&gt; builder_not_theorist</span>
         <p>Four live agentic apps shipped solo — voice RAG, multi-agent planners, and natural-language data tools.</p>
       </div>
     </div>
 
     <p class="about-text reveal">
-      I'm a senior GenAI engineer and solutions builder who takes AI systems from proof-of-concept
-      to production. My work spans designing agentic workflows with <strong>LangGraph</strong> and
+      Senior GenAI engineer and Solutions builder who takes AI systems from proof-of-concept to
+      production — shipping <strong>Agentic AI</strong>, <strong>RAG</strong>, and <strong>LLM systems</strong>
+      along the way. My work spans designing agentic workflows with <strong>LangGraph</strong> and
       agent SDKs, integrating enterprise tools and data, and building rigorous evaluation pipelines
-      across every layer of an agent — so quality isn't a guess, it's measured. I'm Anthropic
-      Claude-certified across both the Architect and Developer tracks, and I spend as much time in
-      the weeds of trajectory-level evals as I do in stakeholder rooms shaping AI roadmaps.
+      across every layer of an agent — so quality isn't a guess, it's measured. I'm
+      <strong>Anthropic Claude-certified</strong> across both the Architect and Developer tracks, and
+      I spend as much time architecting and evaluating agents as I do in stakeholder rooms shaping AI
+      roadmaps.
     </p>
   </section>
 
@@ -137,72 +131,46 @@ architect.<span class="code-fn">receive</span>(
   <section id="skills" class="section container">
     <p class="section-tag reveal">Skills</p>
     <h2 class="section-title reveal">The <span class="highlight">Agentic</span> AI stack, end to end.</h2>
-    <div class="bento-grid">
+    <div class="skills-strip">
 
-      <div class="bento-card bento-wide reveal">
-        <h3><span class="card-icon">🤖</span>Agentic AI &amp; Orchestration</h3>
-        <div class="tags">
-          <span class="tag">LangGraph</span><span class="tag">OpenAI Agents SDK</span><span class="tag">LangChain</span>
-          <span class="tag">CrewAI</span><span class="tag">Planner–Reasoner / ReAct</span><span class="tag">Memory &amp; State Mgmt</span>
-          <span class="tag">Tool Orchestration</span><span class="tag">Agentic RAG</span><span class="tag">Guardrails</span>
-          <span class="tag">Prompt Engineering (CoT, few-shot)</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">Agentic AI &amp; Orchestration</div>
+        <div class="skill-items">LangGraph, Agentic RAG, OpenAI Agents SDK, LangChain, CrewAI, Planner–Reasoner / ReAct, Memory &amp; State Mgmt, Tool Orchestration, Guardrails, Prompt Engineering (CoT, few-shot)</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">⚙️</span>Agentic Dev &amp; Tooling</h3>
-        <div class="tags">
-          <span class="tag">Claude Code</span><span class="tag">MCP Servers</span><span class="tag">Agent Harness Design</span>
-          <span class="tag">Spec-Driven Dev</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">Agentic Dev &amp; Tooling</div>
+        <div class="skill-items">Claude Code, MCP Servers, Agent Harness Design, Spec-Driven Dev</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">📊</span>Agentic &amp; LLM Evaluation</h3>
-        <div class="tags">
-          <span class="tag">Multi-Level Eval Design</span><span class="tag">Golden Datasets</span><span class="tag">LLM-as-Judge</span>
-          <span class="tag">Ragas</span><span class="tag">Tool-Selection Benchmarking</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">Agentic &amp; LLM Evaluation</div>
+        <div class="skill-items">Multi-Level Eval Design, LLM-as-Judge, Golden Datasets, Ragas, Tool-Selection Benchmarking</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">🧠</span>LLM Platforms &amp; Models</h3>
-        <div class="tags">
-          <span class="tag">OpenAI (GPT-4o, Whisper, TTS)</span><span class="tag">Azure OpenAI</span><span class="tag">Anthropic Claude</span>
-          <span class="tag">Google Gemini / Vertex AI</span><span class="tag">Hugging Face</span><span class="tag">Cohere</span><span class="tag">Ollama / MLX</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">LLM Platforms &amp; Models</div>
+        <div class="skill-items">Anthropic Claude, Azure OpenAI, OpenAI (GPT-4o, Whisper, TTS), Google Gemini / Vertex AI, Hugging Face, Cohere, Ollama / MLX</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">🔍</span>RAG &amp; Retrieval</h3>
-        <div class="tags">
-          <span class="tag">Hybrid Retrieval</span><span class="tag">Chunking &amp; Embeddings</span><span class="tag">Azure AI Search</span>
-          <span class="tag">FAISS</span><span class="tag">Pinecone</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">RAG &amp; Retrieval</div>
+        <div class="skill-items">Hybrid Retrieval, Azure AI Search, Chunking &amp; Embeddings, FAISS, Pinecone</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">📈</span>LLMOps &amp; Observability</h3>
-        <div class="tags">
-          <span class="tag">Langfuse</span><span class="tag">Tracing</span><span class="tag">Cost &amp; Latency Monitoring</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">LLMOps &amp; Observability</div>
+        <div class="skill-items">Langfuse, Tracing, Cost &amp; Latency Monitoring</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">☁️</span>Cloud &amp; Backend</h3>
-        <div class="tags">
-          <span class="tag">Azure OpenAI</span><span class="tag">Azure AI Search</span><span class="tag">Cosmos DB</span>
-          <span class="tag">GCP / Vertex AI</span><span class="tag">Python</span><span class="tag">FastAPI</span>
-          <span class="tag">Pydantic</span><span class="tag">Streamlit</span><span class="tag">Docker</span><span class="tag">Jenkins CI/CD</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">Cloud &amp; Backend</div>
+        <div class="skill-items">FastAPI, Python, Azure OpenAI, Azure AI Search, Cosmos DB, GCP / Vertex AI, Pydantic, Streamlit, Docker, Jenkins CI/CD</div>
       </div>
 
-      <div class="bento-card reveal">
-        <h3><span class="card-icon">🎯</span>Delivery &amp; Leadership</h3>
-        <div class="tags">
-          <span class="tag">AI Roadmap Planning</span><span class="tag">Technical Discovery</span><span class="tag">Stakeholder Alignment</span>
-          <span class="tag">Workshop Facilitation</span>
-        </div>
+      <div class="skill-row reveal">
+        <div class="skill-cat">Delivery &amp; Leadership</div>
+        <div class="skill-items">AI Roadmap Planning, Stakeholder Alignment, Technical Discovery, Workshop Facilitation</div>
       </div>
 
     </div>
@@ -365,8 +333,8 @@ architect.<span class="code-fn">receive</span>(
       <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/azure-ai-engineer.png" alt="Microsoft Azure AI Engineer Associate badge"><p>Microsoft Azure AI Engineer Associate (AI-102)</p></div>
       <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/google-genai-leader.png" alt="Google Generative AI Leader badge"><p>Google Generative AI Leader</p></div>
       <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/aws-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner badge"><p>AWS Certified Cloud Practitioner</p></div>
-      <div class="cert-card reveal"><span class="cert-badge cert-badge-emoji">🔶</span><p>Databricks Certified Generative AI Engineer — Associate</p></div>
-      <div class="cert-card reveal"><span class="cert-badge cert-badge-emoji">📘</span><p>BCS ISEB Certified Business Analyst</p></div>
+      <div class="cert-card reveal"><span class="cert-badge cert-badge-flat" style="background:#FF3621"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L21 7V17L12 22L3 17V7L12 2Z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 2L21 7L12 12L3 7L12 2Z" fill="#fff"/></svg></span><p>Databricks Certified Generative AI Engineer — Associate</p></div>
+      <div class="cert-card reveal"><span class="cert-badge cert-badge-flat" style="background:#006341"><span class="cert-badge-text">BCS</span></span><p>BCS ISEB Certified Business Analyst</p></div>
     </div>
   </section>
 
@@ -385,11 +353,11 @@ architect.<span class="code-fn">receive</span>(
         <span>+91-9560613574</span>
       </a>
       <a href="https://www.linkedin.com/in/vivek-suryavanshi/" class="contact-item" target="_blank" rel="noopener">
-        <span class="contact-icon">💼</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.114 20.452H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         <span>LinkedIn</span>
       </a>
       <a href="https://github.com/vivek-suryavanshi" class="contact-item" target="_blank" rel="noopener">
-        <span class="contact-icon">🐙</span>
+        <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.38 1.236-3.22-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23A11.5 11.5 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.624-5.48 5.92.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .32.216.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
         <span>GitHub</span>
       </a>
     </div>
@@ -400,7 +368,7 @@ architect.<span class="code-fn">receive</span>(
 
 <footer class="footer">
   <div class="container footer-inner">
-    <p>© 2026 Vivek Suryavanshi. Built with plain HTML, CSS &amp; JS — no frameworks, no dependencies.</p>
+    <p>© 2026 Vivek Suryavanshi. Built with Claude Code — plain HTML, CSS &amp; JS — no frameworks, no dependencies.</p>
     <a href="#top" class="back-to-top">Back to top ↑</a>
   </div>
 </footer>
