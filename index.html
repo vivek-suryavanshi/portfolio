@@ -9,6 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>
+try {
+  if (!sessionStorage.getItem('vsIntroPlayed')) {
+    document.documentElement.classList.add('intro-pending');
+  }
+} catch (e) {}
+</script>
 </head>
 <body>
 
@@ -97,7 +104,7 @@ architect.<span class="code-fn">receive</span>(
   <!-- ABOUT -->
   <section id="about" class="section container">
     <p class="section-tag reveal">About</p>
-    <h2 class="section-title reveal">My runtime <span class="highlight highlight-lg">philosophy</span>.</h2>
+    <h2 class="section-title reveal">My runtime <span class="highlight highlight-lg">Philosophy</span>.</h2>
     <div class="about-cards">
       <div class="mini-card reveal">
         <span class="mini-card-icon">🧭</span>
@@ -129,7 +136,7 @@ architect.<span class="code-fn">receive</span>(
   <!-- SKILLS -->
   <section id="skills" class="section container">
     <p class="section-tag reveal">Skills</p>
-    <h2 class="section-title reveal">The agentic AI stack, end to end.</h2>
+    <h2 class="section-title reveal">The <span class="highlight">Agentic</span> AI stack, end to end.</h2>
     <div class="bento-grid">
 
       <div class="bento-card bento-wide reveal">
@@ -204,7 +211,7 @@ architect.<span class="code-fn">receive</span>(
   <!-- EXPERIENCE -->
   <section id="experience" class="section container">
     <p class="section-tag reveal">Experience</p>
-    <h2 class="section-title reveal">Fourteen years, one steady climb towards autonomy.</h2>
+    <h2 class="section-title reveal">Fourteen years, one steady climb towards <span class="highlight">Autonomy</span>.</h2>
     <div class="timeline">
 
       <div class="timeline-item reveal">
@@ -276,7 +283,7 @@ architect.<span class="code-fn">receive</span>(
   <!-- PROJECTS -->
   <section id="projects" class="section container">
     <p class="section-tag reveal">Projects</p>
-    <h2 class="section-title reveal">Shipped, not just prototyped.</h2>
+    <h2 class="section-title reveal"><span class="highlight">Shipped</span>, not just prototyped.</h2>
     <div class="projects-grid">
 
       <article class="project-card reveal">
@@ -349,7 +356,7 @@ architect.<span class="code-fn">receive</span>(
   <!-- CERTIFICATIONS -->
   <section id="certifications" class="section container">
     <p class="section-tag reveal">Certifications</p>
-    <h2 class="section-title reveal">Certified, and battle-tested in production.</h2>
+    <h2 class="section-title reveal">Anthropic. Azure. Google. AWS.<br><span class="highlight">All AI Certified!</span></h2>
     <div class="cert-grid">
       <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-architect-professional.png" alt="Anthropic Claude Certified Architect — Professional badge"><p>Anthropic Claude Certified Architect — Professional</p></div>
       <div class="cert-card reveal"><img class="cert-badge" src="assets/badges/claude-architect-foundations.png" alt="Anthropic Claude Certified Architect — Foundations badge"><p>Anthropic Claude Certified Architect — Foundations</p></div>
