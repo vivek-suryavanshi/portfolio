@@ -1,14 +1,10 @@
-// Sun intro — plays once per browser session, for a visitor's first 3 sessions only
+// Sun intro — plays on every page load/reload, for a visitor's first 3 loads only
 (function () {
-  const SESSION_KEY = 'vsIntroPlayed';
   const VISIT_COUNT_KEY = 'vsIntroVisitCount';
   const MAX_PLAYS = 3;
   const html = document.documentElement;
   const dot = document.querySelector('.logo .dot');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  let alreadyPlayedThisSession = true;
-  try { alreadyPlayedThisSession = sessionStorage.getItem(SESSION_KEY) === '1'; } catch (e) {}
 
   let visitCount = MAX_PLAYS;
   try { visitCount = parseInt(localStorage.getItem(VISIT_COUNT_KEY), 10) || 0; } catch (e) {}
@@ -17,13 +13,12 @@
     html.classList.remove('intro-pending');
   }
 
-  if (alreadyPlayedThisSession || visitCount >= MAX_PLAYS || !dot || reducedMotion) {
+  if (visitCount >= MAX_PLAYS || !dot || reducedMotion) {
     revealHero();
     return;
   }
 
   try {
-    sessionStorage.setItem(SESSION_KEY, '1');
     localStorage.setItem(VISIT_COUNT_KEY, String(visitCount + 1));
   } catch (e) {}
 
