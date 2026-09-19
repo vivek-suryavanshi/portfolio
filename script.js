@@ -1,26 +1,17 @@
-// Sun intro — plays on every page load/reload, for a visitor's first 3 loads only
+// Sun intro — plays on every full page load (not on in-page anchor nav, since that never reloads the page)
 (function () {
-  const VISIT_COUNT_KEY = 'vsIntroVisitCount';
-  const MAX_PLAYS = 3;
   const html = document.documentElement;
   const dot = document.querySelector('.logo .dot');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  let visitCount = MAX_PLAYS;
-  try { visitCount = parseInt(localStorage.getItem(VISIT_COUNT_KEY), 10) || 0; } catch (e) {}
 
   function revealHero() {
     html.classList.remove('intro-pending');
   }
 
-  if (visitCount >= MAX_PLAYS || !dot || reducedMotion) {
+  if (!dot || reducedMotion) {
     revealHero();
     return;
   }
-
-  try {
-    localStorage.setItem(VISIT_COUNT_KEY, String(visitCount + 1));
-  } catch (e) {}
 
   const overlay = document.createElement('div');
   overlay.className = 'intro-overlay';
