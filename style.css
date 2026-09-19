@@ -377,17 +377,9 @@ ul { list-style: none; }
 }
 .cert-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .cert-badge {
-  width: 72px; height: 72px; min-width: 72px; object-fit: contain;
+  width: 88px; height: 88px; min-width: 88px; object-fit: contain;
   image-rendering: -webkit-optimize-contrast;
-  background: #fff; border-radius: 14px; padding: 6px;
 }
-.cert-badge-flat {
-  width: 72px; height: 72px; min-width: 72px;
-  display: flex; align-items: center; justify-content: center;
-  border-radius: 50%;
-}
-.cert-badge-flat svg { width: 34px; height: 34px; }
-.cert-badge-text { color: #fff; font-weight: 800; font-size: 1rem; letter-spacing: 0.02em; }
 .cert-card p { font-size: 0.9rem; font-weight: 500; line-height: 1.35; }
 
 /* ==========================================================================
